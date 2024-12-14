@@ -1,0 +1,753 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vijay Shrivarshan Vijayaraja</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-content">
+            <h1 class="site-title">
+                <a href="/">V</a>
+            </h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://github.com/tnvjjr?tab=repositories" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vijay-shrivarshan-vijayaraja-b0133500/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://docs.google.com/document/d/160pc1J3PHywIJPY_Z1ra16nSk91pMmUBxMzDRBTX3i0/edit?tab=t.0" target="_blank" class="social-link">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Profile Section -->
+        <section id="about" class="section">
+            <div class="profile">
+                <img src="img/me.png" alt="Vijay Shrivarshan Vijayaraja" class="profile-image tilt-element">
+                <div class="profile-info">
+                    <h1 class="profile-name">Vijay Shrivarshan Vijayaraja</h1>
+                    <p>I am Vijay Shrivarshan Vijayaraja, an 11th grader, currently enrolled at Laurel Heights Secondary School, driven by a profound passion for programming, Machine Learning/AI, and web development. In my relentless pursuit of knowledge and skill enhancement, I proudly hold distinctions as one of the youngest Salesforce Administrators and AI Associate certification holders. Moreover, I stand as the youngest individual to be certified in ISC2 certified in CyberSecurity and Google Cybersecurity certification. Beyond certifications, my enthusiasm extends to working on robotics projects, crafting circuit boards, and actively participating in hackathons. I am committed to broadening my expertise in technology and eagerly anticipate applying my skills to real-world projects and challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="content-grid">
+                <div class="content-card" onclick="openPopup('coder-cadets-popup')">
+                    <h3>Head of Web Development</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Coder Cadets · Part-time</p>
+                        <p class="card-secondary">Jul 2024 - Present</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('communitech-popup')">
+                    <h3>IT Support</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Communitech · Co-op</p>
+                        <p class="card-secondary">Jun 2024 - Jul 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('launch-popup')">
+                    <h3>Robotics Assistant Coach</h3>
+                    <div class="card-info">
+                        <p class="card-primary">LAUNCH Waterloo · Volunteer</p>
+                        <p class="card-secondary">Sep 2022 - Oct 2023</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="content-grid">
+                <div class="content-card" onclick="openPopup('ibm-ai-popup')">
+                    <h3>IBM Artificial Intelligence Fundamentals</h3>
+                    <div class="card-info">
+                        <p class="card-primary">IBM</p>
+                        <p class="card-secondary">Dec 2024</p>
+                        <p class="card-highlight">Age: 16</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('tryhackme-popup')">
+                    <h3>TryHackMe Cyber Security 101</h3>
+                    <div class="card-info">
+                        <p class="card-primary">TryHackMe</p>
+                        <p class="card-secondary">Dec 2024</p>
+                        <p class="card-highlight">Age: 16</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('isc2-popup')">
+                    <h3>ISC2 Certified in CyberSecurity</h3>
+                    <div class="card-info">
+                        <p class="card-primary">ISC2</p>
+                        <p class="card-secondary">Aug 2024</p>
+                        <p class="card-highlight">Age: 16</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('google-cyber')">
+                    <h3>Google Cybersecurity Professional Certificate</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Google</p>
+                        <p class="card-secondary">Mar 2024</p>
+                        <p class="card-highlight">Age: 16</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('python-popup')">
+                    <h3>Python Essentials</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Cisco Networking Academy</p>
+                        <p class="card-secondary">Dec 2023</p>
+                        <p class="card-highlight">Age: 15</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('salesforce-ai-popup')">
+                    <h3>Salesforce Certified AI Associate</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Salesforce</p>
+                        <p class="card-secondary">Nov 2023</p>
+                        <p class="card-highlight">Age: 15</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('salesforce-admin-popup')">
+                    <h3>Salesforce Certified Administrator</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Salesforce</p>
+                        <p class="card-secondary">Aug 2023</p>
+                        <p class="card-highlight">Age: 15</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="content-grid">
+                <div class="content-card" onclick="openPopup('stock-prediction-popup')">
+                    <h3>Stock Price Prediction using Machine Learning</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Machine Learning</p>
+                        <p class="card-secondary">Dec 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View Project</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('gmail-spam-filter-popup')">
+                    <h3>Gmail Spam Filter</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Chrome Extension</p>
+                        <p class="card-secondary">Nov 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('youtube-summarizer-popup')">
+                    <h3>YouTube AI Video Summarizer</h3>
+                    <div class="card-info">
+                        <p class="card-primary">AI</p>
+                        <p class="card-secondary">Nov 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('line-follower-popup')">
+                    <h3>Line Follower Robot</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Robotics</p>
+                        <p class="card-secondary">Sep 2024 - Oct 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('beat-fighter-popup')">
+                    <h3>Beat Fighter</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Game Development</p>
+                        <p class="card-secondary">Oct 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+
+                <div class="content-card" onclick="openPopup('web-scraper-popup')">
+                    <h3>Web Scraper (Homework helper)</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Automation</p>
+                        <p class="card-secondary">Jul 2024 - Aug 2024</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-form">
+                <form id="emailForm" onsubmit="sendEmail(event)">
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter email subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup Windows -->
+    <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
+    
+    <!-- TryHackMe Popup -->
+    <div class="popup" id="tryhackme-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>TryHackMe Cyber Security 101</h3>
+            <div class="popup-body">
+                <img src="img/101.png" alt="TryHackMe Cyber Security 101 Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Dec 2024</p>
+                    <p class="project-association">TryHackMe</p>
+                    <p class="age">Age: 16</p>
+                    <p class="credential-id">Credential ID: THM-ZO8XCAAGJG</p>
+                    <h4>About the Certification</h4>
+                    <p>This comprehensive learning path provides an in-depth exploration of computer security, covering critical topics such as networking and cryptography, advanced concepts in MS Windows, Active Directory, and Linux, offensive security techniques and system exploitation, defensive security strategies and tools, and an overview of professional opportunities in cybersecurity.</p>
+                    
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>Networking & Cryptography</li>
+                        <li>Windows System Administration</li>
+                        <li>Active Directory Management</li>
+                        <li>Linux System Administration</li>
+                        <li>Offensive Security Techniques</li>
+                        <li>System Exploitation</li>
+                        <li>Defensive Security Strategies</li>
+                        <li>Security Tools & Implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IBM AI Popup -->
+    <div class="popup" id="ibm-ai-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>IBM Artificial Intelligence Fundamentals</h3>
+            <div class="popup-body">
+                <img src="img/AIF.png" alt="IBM Artificial Intelligence Fundamentals Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Dec 2024</p>
+                    <p class="project-association">IBM</p>
+                    <p class="age">Age: 16</p>
+                    <p class="credential-id">Credential ID: PWID-B0133500</p>
+                    <h4>About the Certification</h4>
+                    <p>This credential earner demonstrates knowledge of artificial intelligence (AI) concepts, such as natural language processing, computer vision, machine learning, deep learning, chatbots, and neural networks; AI ethics; and the applications of AI. The individual has a conceptual understanding of how to run an AI model using IBM Watson Studio. The earner is aware of the job outlook in fields that use AI and is familiar with the skills required for success in various roles in the domain.</p>
+                    
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>AI Applications</li>
+                        <li>Machine Learning</li>
+                        <li>Neural Networks</li>
+                        <li>Deep Learning</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://www.credly.com/badges/451bfa95-93b3-4cc2-8320-c56315ff62ec/public_url" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ISC2 Popup -->
+    <div class="popup" id="isc2-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>ISC2 Certified in CyberSecurity</h3>
+            <div class="popup-body">
+                <img src="img/ISC2 Certification.jpg" alt="ISC2 Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Aug 2024</p>
+                    <p class="project-association">ISC2</p>
+                    <p class="age">Age: 16</p>
+                    <h4>About the Certification</h4>
+                    <p>The ISC2 Certified in Cybersecurity certification validates my foundational knowledge in cybersecurity principles, best practices, and emerging threats. As one of the youngest certification holders, I demonstrated proficiency in network security, access controls, security operations, and incident response.</p>
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>Security Principles</li>
+                        <li>Business Continuity (BC)</li>
+                        <li>Disaster Recovery & Incident Response</li>
+                        <li>Access Controls</li>
+                        <li>Network Security</li>
+                        <li>Security Operations</li>
+                        <li>Risk Management</li>
+                        <li>Security Assessment</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://www.credly.com/badges/0df7a0ac-202d-48f2-99c2-43a68d8e0a82/linked_in_profile" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Popup -->
+    <div class="popup" id="google-cyber">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Google Cybersecurity Certification</h3>
+            <div class="popup-body">
+                <img src="img/Google Cybersecurity.png" alt="Google Cybersecurity Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Mar 2024</p>
+                    <p class="project-association">Google</p>
+                    <p class="age">Age: 16</p>
+                    <div class="ace-endorsement">
+                        <div class="ace-header">
+                            <img src="img/ACE.png" alt="American Council on Education Logo" class="ace-logo">
+                            <h4>American Council on Education</h4>
+                        </div>
+                        <p>This credential has been successfully evaluated by the American Council on Education for college credit. It is recommended for a total of 9 college credits. For more information about ACE Learning Evaluations, visit <a href="http://www.acenet.edu" target="_blank">www.acenet.edu</a>.</p>
+                    </div>
+                    <h4>About the Certification</h4>
+                    <p>Those who earn the Google Cybersecurity Certificate have completed eight courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for entry-level roles in cybersecurity. They are competent in beginner-level Python, Linux, SQL, Security Information and Event Management (SIEM) tools, and Intrusion Detection Systems (IDS). They know how to identify common cybersecurity risks, threats, and vulnerabilities, as well as the techniques to mitigate.</p>
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>Network Security</li>
+                        <li>Python Programming</li>
+                        <li>Linux Command Line</li>
+                        <li>SQL for Security</li>
+                        <li>SIEM Tools (Splunk)</li>
+                        <li>Intrusion Detection Systems</li>
+                        <li>Security Frameworks</li>
+                        <li>Incident Response</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://www.credly.com/badges/15d2ced4-6385-436d-aa6d-c7ac7bf470d0" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Python Popup -->
+    <div class="popup" id="python-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Python Essentials</h3>
+            <div class="popup-body">
+                <img src="img/Python.png" alt="Python Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Dec 2023</p>
+                    <p class="project-association">Cisco Networking Academy</p>
+                    <p class="age">Age: 15</p>
+                    <h4>About the Certification</h4>
+                    <p>The Python Essentials certification from Cisco validates my proficiency in Python programming fundamentals. Through this certification, I demonstrated my ability to write efficient Python code, work with data structures, and implement object-oriented programming concepts.</p>
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>Python Programming</li>
+                        <li>Data Structures</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>API Integration</li>
+                        <li>NumPy & Pandas</li>
+                        <li>Machine Learning Libraries</li>
+                        <li>Algorithm Implementation</li>
+                        <li>Code Testing & Debugging</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://www.credly.com/badges/e95c2ee5-972e-4240-82f3-ff33d77795c6" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Salesforce AI Popup -->
+    <div class="popup" id="salesforce-ai-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Salesforce Certified AI Associate</h3>
+            <div class="popup-body">
+                <img src="img/Ai Associate.png" alt="Salesforce AI Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Oct 2023</p>
+                    <p class="project-association">Salesforce</p>
+                    <p class="age">Age: 15</p>
+                    <h4>About the Certification</h4>
+                    <p>As one of the youngest Salesforce AI Associate certification holders, I demonstrated understanding of AI fundamentals and their applications within the Salesforce ecosystem. This certification validates my ability to leverage AI tools and features to enhance business processes.</p>
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>AI Fundamentals</li>
+                        <li>Einstein Features</li>
+                        <li>Predictive Analytics</li>
+                        <li>Natural Language Processing</li>
+                        <li>Machine Learning Basics</li>
+                        <li>AI Ethics & Governance</li>
+                        <li>Data Preparation</li>
+                        <li>AI Model Evaluation</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=IynTwb5k7bbIUJ6cY/yLxeES/yXgu+Hehrqg5W7n77GL4NJU6aXHazlaBecH0wIO" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Salesforce Admin Popup -->
+    <div class="popup" id="salesforce-admin-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Salesforce Certified Administrator</h3>
+            <div class="popup-body">
+                <img src="img/Admin.png" alt="Salesforce Admin Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Sep 2023</p>
+                    <p class="project-association">Salesforce</p>
+                    <p class="age">Age: 15</p>
+                    <h4>About the Certification</h4>
+                    <p>As one of the youngest Salesforce Certified Administrators, I demonstrated expertise in managing and customizing Salesforce platforms. This certification validates my ability to maintain user accounts, configure security settings, customize applications, and implement automation tools.</p>
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>User Management & Security</li>
+                        <li>Data Management</li>
+                        <li>Workflow Automation</li>
+                        <li>Reports & Dashboards</li>
+                        <li>Process Builder & Flow</li>
+                        <li>Object & Field Management</li>
+                        <li>App Customization</li>
+                        <li>Data Security & Access</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=IynTwb5k7bbIUJ6cY/yLxeES/yXgu+Hehrqg5W7n77GL4NJU6aXHazlaBecH0wIO" target="_blank" class="credential-link">View Credential</a>
+                        <a href="https://focusonforce.com/interviews/focused-and-certified-vijay-shrivarshan-vijayaraja-a-young-canadian-prodigys-foray-into-salesforce/" target="_blank" class="credential-link">View Interview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Popups -->
+    <div class="popup" id="launch-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Robotics Assistant Coach</h3>
+            <div class="popup-body">
+                <img src="img/Launch.webp" alt="LAUNCH Waterloo" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Sep 2022 - Oct 2023 · 1 yr 2 mos</p>
+                    <p class="project-association">LAUNCH Waterloo · Volunteer</p>
+                    <h4>About the Role</h4>
+                    <p>As a Robotics Assistant Coach for middle schools, I provide essential support to the head coach and student participants within the robotics team. My responsibilities encompass a wide range of tasks aimed at facilitating the learning and growth of the team members. This includes offering technical assistance in understanding robotics concepts, guiding students through programming challenges, and assisting in the design and construction of robots. Additionally, I help prepare the team for competitions by contributing to strategy development, optimizing robot performance, and overseeing practice sessions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="communitech-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>IT Support</h3>
+            <div class="popup-body">
+                <img src="img/Communitech.jpg" alt="Communitech" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Jun 2024 - Jul 2024 · 2 mos</p>
+                    <p class="project-association">Communitech · Co-op</p>
+                    <p class="location">Waterloo, Ontario, Canada · On-site</p>
+                    <h4>About the Role</h4>
+                    <p>As a Co-op student, I actively participated in various IT tasks such as managing inventory, applying asset tags, and maintaining logs. I assisted in identifying network ports, re-cabling networking panels, preparing laptops for deployment, troubleshooting systems, offering printer support, and guiding whiteboard functionalities. Furthermore, I collaborated on audio/video investigations, engaging in problem-solving initiatives to enhance operational efficiency and technological functionality within the organization.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="coder-cadets-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Head of Web Development</h3>
+            <div class="popup-body">
+                <img src="img/codercadets.jpeg" alt="Coder Cadets" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Jul 2024 - Present · 5 mos</p>
+                    <p class="project-association">Coder Cadets · Part-time</p>
+                    <p class="location">Waterloo, Ontario, Canada</p>
+                    <h4>About the Role</h4>
+                    <p>As the Lead Web Developer for the Coder Cadets website, I combined HTML, CSS, and JavaScript to ensure a seamless user experience. By prioritizing responsiveness, UX/UI design, SEO, and cross-browser compatibility, I delivered a polished site. Leveraging version control, debugging tools, security measures, and effective communication, I showcased my web development expertise and innovation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Popups -->
+    <!-- Line Follower Robot Popup -->
+    <div class="popup" id="line-follower-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Line Follower Robot</h3>
+            <div class="popup-body">
+                <img src="img/linefollwer.png" alt="Line Follower Robot" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Sep 2024 - Oct 2024</p>
+                    <p class="project-association">Associated with Laurel Heights Secondary School</p>
+                    <h4>About the Project</h4>
+                    <p>The Line Follower Robot project involved building and programming a small, autonomous robot capable of following a marked path using sensors and C++ programming. Constructed on a CD base, I designed the schematic for the circuit board using AutoCAD to ensure optimal layout, then created the physical board by carefully arranging and soldering each component, including phototransistors, PIC chips, LEDs, and motor connections. I programmed the PIC chip using C++ to process real-time sensor data, control motor output, and guide the robot's precise adjustments along a line path. My robot worked exceptionally well, and the quality of my soldering and connections earned me a grade of 100 for the project.</p>
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>Robotics</li>
+                        <li>C++</li>
+                        <li>AutoCAD</li>
+                        <li>Computer Engineering</li>
+                        <li>Robot Programming</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beat Fighter Popup -->
+    <div class="popup" id="beat-fighter-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Beat Fighter</h3>
+            <div class="popup-body">
+                <img src="img/Beat fighter.png" alt="Beat Fighter Game" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Oct 2024</p>
+                    <p class="project-association">Associated with Incubator Hacks</p>
+                    <h4>About the Project</h4>
+                    <p>Beat Fighter is a rhythm-based fighting game powered by Python and Pygame, with a custom Arduino game controller for an immersive arcade experience. Players time their hits to the beat, dealing damage to enemies with each accurate press, while missed notes trigger counterattacks, adding intensity to gameplay. Built using Python 3.x, Pygame for graphics and animations, Arduino for custom controller input, and custom image assets for backgrounds and character animations, Beat Fighter combines rhythm mechanics with combat action, delivering a unique blend of timing, strategy, and real-time response.</p>
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>Game Development</li>
+                        <li>Pygame</li>
+                        <li>Arduino IDE</li>
+                        <li>Game Design</li>
+                        <li>Python</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://github.com/ebanez8/Beat-Fighter-IncubatorHacks" target="_blank" class="credential-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web Scraper Popup -->
+    <div class="popup" id="web-scraper-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Web Scraper (Homework helper)</h3>
+            <div class="popup-body">
+                <img src="img/WebScaper.png" alt="Web Scraper Project" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Jul 2024 - Aug 2024</p>
+                    <p class="project-association">Associated with Communitech</p>
+                    <h4>About the Project</h4>
+                    <p>The homework helper project, powered by Python, streamlines data extraction from hyperlinks within a document by leveraging essential modules. Through the use of python-docx for Word document interactions, beautifulsoup4 for HTML and XML parsing, python-pptx for PowerPoint file handling, requests for making HTTP requests, and PyPDF2 for PDF data extraction, the tool automates the process, eliminating manual link visits. It boasts features such as automated extraction, time-saving efficiency, versatile hyperlink handling, customizability, and user-friendliness.</p>
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>HTML Scripting</li>
+                        <li>XML</li>
+                        <li>HTTPS</li>
+                        <li>Web Scraping</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://github.com/tnvjjr/Web-Scraper-Homework-helper" target="_blank" class="credential-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube AI Video Summarizer Popup -->
+    <div class="popup" id="youtube-summarizer-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>YouTube AI Video Summarizer</h3>
+            <div class="popup-body">
+                <img src="img/YT.png" alt="YouTube AI Video Summarizer" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Nov 2024</p>
+                    
+                    <h4>About the Project</h4>
+                    <p>The YouTube AI Video Summarizer is an innovative Python-powered tool that uses Facebook's BART Large Model to efficiently extract and summarize content from YouTube videos. This application automates transcript retrieval using the YouTube Transcript API, transforming lengthy video content into concise, accurate summaries within seconds.</p>
+                    
+                    <p>Key features include automated transcript retrieval, AI-powered summarization, user-friendly interface, robust error handling, and responsive design for all devices.</p>
+                    
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>Artificial Intelligence</li>
+                        <li>Python</li>
+                        <li>Large Language Models</li>
+                        <li>APIs</li>
+                        <li>Streamlit</li>
+                        <li>PyTorch</li>
+                        <li>transformers</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://youtube-ai-video-summarizer-4anvgnhdve2fcvaycrvv2p.streamlit.app/" target="_blank" class="credential-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gmail Spam Filter Popup -->
+    <div class="popup" id="gmail-spam-filter-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Gmail Spam Filter</h3>
+            <div class="popup-body">
+                <img src="img/gmail.png" alt="Gmail Spam Filter" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Nov 2024</p>
+                    <p class="project-association">Chrome Extension</p>
+                    <h4>About the Project</h4>
+                    <p>The Gmail AI Spam Filter is a Chrome extension that leverages advanced pattern recognition to provide real-time spam detection directly within Gmail's interface. This powerful tool enhances Gmail's native spam filtering capabilities by implementing an intelligent, probability-based classification system that analyzes email content and patterns to identify potential spam messages. The extension seamlessly integrates with Gmail's UI, offering intuitive visual indicators and probability scores for each email, while maintaining high performance through efficient background processing and real-time updates. Built with modern web technologies and following Chrome's Manifest V3 architecture, this extension demonstrates robust error handling, persistent connection management, and seamless user experience across Gmail sessions.</p>
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>JavaScript</li>
+                        <li>Pattern Recognition</li>
+                        <li>Chrome Extension Development</li>
+                        <li>HTML/CSS</li>
+                        <li>API Integration</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://chromewebstore.google.com/detail/gmail-spam-filter/ghehikhcifnpinafmnohonbeiejjolgf" target="_blank" class="credential-link">View Extension</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stock Price Prediction Popup -->
+    <div class="popup" id="stock-prediction-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Stock Price Prediction using Machine Learning</h3>
+            <div class="popup-body">
+                <img src="img/SPP.png" alt="Stock Price Prediction Project" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Dec 2024</p>
+                    <p class="project-association">Machine Learning Project</p>
+                    <h4>About the Project</h4>
+                    <p>The Stock Price Prediction with Facebook Prophet is a sophisticated web application that harnesses the power of Facebook's Prophet forecasting model to deliver accurate stock market predictions. Built with Streamlit's modern interface, this tool processes historical stock data through advanced time-series analysis to forecast future price movements. The application features interactive visualizations powered by Plotly, allowing users to explore historical trends, seasonal patterns, and future predictions through an intuitive dashboard. By integrating real-time stock data through the yfinance API and implementing efficient data storage with SQLite, the system provides up-to-date predictions while maintaining high performance.</p>
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>Machine Learning</li>
+                        <li>Python</li>
+                        <li>Facebook Prophet</li>
+                        <li>Streamlit</li>
+                        <li>Time Series Analysis</li>
+                        <li>Plotly</li>
+                        <li>SQLite</li>
+                        <li>API Integration</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://stock-price-prediction-with-fb-prophet-model-beunpfoespqlsrsbn.streamlit.app/" target="_blank" class="credential-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
