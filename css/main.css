@@ -1419,3 +1419,14 @@ nav {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   color: white !important;
 }
+
+#neko {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  pointer-events: none;
+  z-index: 9999;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.1s ease-out;
+}
