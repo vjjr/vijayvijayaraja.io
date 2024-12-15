@@ -129,7 +129,7 @@ class Neko {
         // Update element
         this.element.style.left = `${this.x - 32}px`;
         this.element.style.top = `${this.y - 32}px`;
-        this.element.style.backgroundImage = `url('assets/neko/${sprite}')`;
+        this.element.style.backgroundImage = `url('assets/cat/${sprite}')`;
         
         requestAnimationFrame(() => this.update());
     }
