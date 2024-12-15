@@ -907,6 +907,7 @@ nav {
   color: var(--text-primary);
 }
 
+/* Contact Form Styles */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -915,6 +916,47 @@ nav {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-btn i {
+  font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+  background: var(--primary-color-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.submit-btn .btn-loading {
+  display: none;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .form-group {
@@ -965,31 +1007,6 @@ nav {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
   background: var(--background-primary);
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-  background: var(--primary-color);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  letter-spacing: 0.3px;
-}
-
-.submit-btn:hover {
-  background: var(--primary-color-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
-}
-
-.submit-btn:active {
-  transform: translateY(0);
-  box-shadow: none;
 }
 
 @media (max-width: 768px) {

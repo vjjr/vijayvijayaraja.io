@@ -80,19 +80,45 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 // Email form handling
-function sendEmail(event) {
+const form = document.getElementById('emailForm');
+const submitButton = document.getElementById('submitButton');
+const btnText = submitButton.querySelector('.btn-text');
+const btnLoading = submitButton.querySelector('.btn-loading');
+
+form.addEventListener('submit', async function(event) {
     event.preventDefault();
     
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // Create mailto URL with form data
-    const mailtoUrl = `mailto:vjvijayaraja@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
-    
-    // Open default email client
-    window.location.href = mailtoUrl;
-    
-    // Clear form
-    document.getElementById('emailForm').reset();
-}
+    // Show loading state
+    btnText.style.display = 'none';
+    btnLoading.style.display = 'inline-block';
+    submitButton.disabled = true;
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+            // Show success message
+            alert('Message sent successfully!');
+            form.reset();
+        } else {
+            throw new Error(data.error || 'Form submission failed');
+        }
+    } catch (error) {
+        // Show error message
+        alert('Failed to send message. Please try again.');
+        console.error('Form error:', error);
+    }
+
+    // Reset button state
+    btnText.style.display = 'inline-block';
+    btnLoading.style.display = 'none';
+    submitButton.disabled = false;
+});
