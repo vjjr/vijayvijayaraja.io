@@ -110,6 +110,20 @@
         <section id="certifications" class="section">
             <h2 class="section-title">Certifications</h2>
             <div class="content-grid">
+
+                <div class="content-card" onclick="openPopup('ml-stanford-popup')">
+                    <h3>Stanford Machine Learning Specialization</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Stanford</p>
+                        <p class="card-secondary">Dec 2024</p>
+                        <p class="card-highlight">Age: 16</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>            
+
+
                 <div class="content-card" onclick="openPopup('ibm-ai-popup')">
                     <h3>IBM Artificial Intelligence Fundamentals</h3>
                     <div class="card-info">
@@ -300,6 +314,67 @@
 
     <!-- Popup Windows -->
     <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
+
+    <!-- ML Stanford Popup -->
+    <div class="popup" id="ml-stanford-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Stanford Machine Learning Specialization</h3>
+            <div class="popup-body">
+                <img src="img/ML Stanford.jpg" alt="Stanford Machine Learning Specialization" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Dec 2024</p>
+                    <p class="project-association">Stanford</p>
+                    <p class="age">Age: 16</p>
+                    <h4>About the Certification</h4>
+                    <p>This credential earner demonstrates knowledge of modern machine learning concepts, including supervised learning (linear regression, logistic regression, neural networks, decision trees), unsupervised learning (clustering, anomaly detection), recommender systems, and reinforcement learning. The individual has developed practical skills to build and optimize machine learning models, following industry best practices. They are equipped to apply machine learning techniques to address challenging real-world problems and are prepared to explore career opportunities in the field of artificial intelligence and machine learning.</p>
+                    
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>Neural Networks</li>
+                        <li>Deep Learning</li>
+                        <li>Machine Learning Algorithms</li>
+                        <li>Logistic Regression</li>
+                        <li>Linear Regression</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://coursera.org/share/b7da450d0d54bbe48389cba03e30fa38" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- IBM AI Popup -->
+    <div class="popup" id="ibm-ai-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>IBM Artificial Intelligence Fundamentals</h3>
+            <div class="popup-body">
+                <img src="img/AIF.jpg" alt="IBM Artificial Intelligence Fundamentals Certification" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Dec 2024</p>
+                    <p class="project-association">IBM</p>
+                    <p class="age">Age: 16</p>
+                    <p class="credential-id">Credential ID: PWID-B0133500</p>
+                    <h4>About the Certification</h4>
+                    <p>This credential earner demonstrates knowledge of artificial intelligence (AI) concepts, such as natural language processing, computer vision, machine learning, deep learning, chatbots, and neural networks; AI ethics; and the applications of AI. The individual has a conceptual understanding of how to run an AI model using IBM Watson Studio. The earner is aware of the job outlook in fields that use AI and is familiar with the skills required for success in various roles in the domain.</p>
+                    
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>AI Applications</li>
+                        <li>Machine Learning</li>
+                        <li>Neural Networks</li>
+                        <li>Deep Learning</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://www.credly.com/badges/451bfa95-93b3-4cc2-8320-c56315ff62ec/public_url" target="_blank" class="credential-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- TryHackMe Popup -->
     <div class="popup" id="tryhackme-popup">
@@ -327,37 +402,6 @@
                         <li>Defensive Security Strategies</li>
                         <li>Security Tools & Implementation</li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- IBM AI Popup -->
-    <div class="popup" id="ibm-ai-popup">
-        <div class="popup-content">
-            <button class="close-popup" onclick="closePopup()">&times;</button>
-            <h3>IBM Artificial Intelligence Fundamentals</h3>
-            <div class="popup-body">
-                <img src="img/AIF.png" alt="IBM Artificial Intelligence Fundamentals Certification" class="cert-logo">
-                <div class="cert-details">
-                    <p class="project-duration">Dec 2024</p>
-                    <p class="project-association">IBM</p>
-                    <p class="age">Age: 16</p>
-                    <p class="credential-id">Credential ID: PWID-B0133500</p>
-                    <h4>About the Certification</h4>
-                    <p>This credential earner demonstrates knowledge of artificial intelligence (AI) concepts, such as natural language processing, computer vision, machine learning, deep learning, chatbots, and neural networks; AI ethics; and the applications of AI. The individual has a conceptual understanding of how to run an AI model using IBM Watson Studio. The earner is aware of the job outlook in fields that use AI and is familiar with the skills required for success in various roles in the domain.</p>
-                    
-                    <h4>Skills Acquired</h4>
-                    <ul class="skills-list">
-                        <li>AI Applications</li>
-                        <li>Machine Learning</li>
-                        <li>Neural Networks</li>
-                        <li>Deep Learning</li>
-                        <li>Natural Language Processing</li>
-                    </ul>
-                    <div class="cert-buttons">
-                        <a href="https://www.credly.com/badges/451bfa95-93b3-4cc2-8320-c56315ff62ec/public_url" target="_blank" class="credential-link">View Credential</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -411,7 +455,7 @@
                             <img src="img/ACE.png" alt="American Council on Education Logo" class="ace-logo">
                             <h4>American Council on Education</h4>
                         </div>
-                        <p>This credential has been successfully evaluated by the American Council on Education for college credit. It is recommended for a total of 9 college credits. For more information about ACE Learning Evaluations, visit <a href="http://www.acenet.edu" target="_blank">www.acenet.edu</a>.</p>
+                        <p>This credential has been successfully evaluated by the American Council on Education for college credit. It is recommended for a total of 9 college credits.</p>
                     </div>
                     <h4>About the Certification</h4>
                     <p>Those who earn the Google Cybersecurity Certificate have completed eight courses, developed by Google, that include hands-on, practice-based assessments and are designed to prepare them for entry-level roles in cybersecurity. They are competent in beginner-level Python, Linux, SQL, Security Information and Event Management (SIEM) tools, and Intrusion Detection Systems (IDS). They know how to identify common cybersecurity risks, threats, and vulnerabilities, as well as the techniques to mitigate.</p>
