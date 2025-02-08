@@ -1569,3 +1569,42 @@ ol.nested>li:before {
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .menu .menu-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .menu-button {
+    display: block;
+  }
+
+  .menu .menu-button.active + .menu-items {
+    display: flex;
+  }
+
+  .menu .menu-items > a,
+  .menu .menu-items > div {
+    margin: 10px 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .banner .flex-item {
+    padding: 0 10px;
+  }
+
+  .gallery > a.flex-column,
+  .gallery > div.flex-column {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .masonry {
+    column-count: 1;
+  }
+}

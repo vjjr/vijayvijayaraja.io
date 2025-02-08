@@ -45,7 +45,7 @@
                         <i class="fas fa-file-alt"></i>
                     </a>
                 </div>
-                <button class="mobile-menu" aria-label="Toggle menu">
+                <button class="mobile-menu" aria-label="Toggle menu" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -915,4 +915,12 @@
 <script src="js/main.js"></script>
 <script src="js/mousefollower.js"></script>
 <script src="js/cat.js"></script>
+<script>
+  function toggleMenu() {
+    const menuButton = document.querySelector('.mobile-menu');
+    const menuItems = document.querySelector('.menu .menu-items');
+    menuButton.classList.toggle('active');
+    menuItems.classList.toggle('active');
+  }
+</script>
 </html>

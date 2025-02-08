@@ -187,7 +187,7 @@ nav {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.98);
+    background: var(--background-secondary);
     padding: 1.5rem;
     flex-direction: column;
     align-items: center;
@@ -198,6 +198,14 @@ nav {
 
   .nav-links.active {
     display: flex;
+  }
+
+  .nav-link {
+    color: var(--text-primary);
+  }
+
+  .nav-link:hover {
+    color: var(--primary-color);
   }
 
   .social-links {
@@ -219,6 +227,27 @@ nav {
   .mobile-menu.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+.menu .menu-items.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 1;
+}
+
+.menu .menu-items.active a,
+.menu .menu-items.active div {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
 }
 
 /* Main Content */
@@ -1429,4 +1458,69 @@ nav {
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 0.1s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  .social-links {
+    margin-top: 10px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-card {
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
