@@ -229,6 +229,17 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="content-grid">
 
+                <div class="content-card" onclick="openPopup('carbon')">
+                    <h3>CarbonPrint</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Artificial Intelligence</p>
+                        <p class="card-secondary">Feb 2025</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View Project</span>
+                    </div>
+                </div>   
+
                 <div class="content-card" onclick="openPopup('baymax')">
                     <h3>BayMax Health Bot</h3>
                     <div class="card-info">
@@ -893,7 +904,7 @@
                 <img src="img/bmh.jpeg" alt="BayMax Health Bot" class="cert-logo">
                 <div class="cert-details">
                     <p class="project-duration">Jan 2025</p>
-                    <p class="project-association">Neural Network</p>
+                    <p class="project-association">Machine Learning</p>
                     <h4>About the Project</h4>
                     <p>Baymax Bot revolutionizes healthcare with an AI-powered chatbot featuring real-time image recognition for injury assessment, accurate diagnoses, tailored first-aid advice, and symptom tracking. Built with Python, TensorFlow, Flask, and advanced ML/NLP techniques, it offers a user-friendly experience inspired by Baymax from Big Hero 6. The system ensures privacy, cross-device compatibility, and real-time efficiency.</p>
                     <h4>Skills Used</h4>
@@ -911,6 +922,35 @@
             </div>
         </div>
     </div>
+
+    <!--CarbonPrint-->
+    <div class="popup" id="carbon">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>CarbonPrint</h3>
+            <div class="popup-body">
+                <img src="img/carbon.png" alt="CarbonPrint" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Jan 2025</p>
+                    <p class="project-association">Artifical Intelligence</p>
+                    <h4>About the Project</h4>
+                    <p>CarbonPrint revolutionizes sustainable living with an AR-powered app that scans barcodes to reveal product environmental impact instantly. Built with React, Vite, TypeScript, and Tailwind CSS, it integrates Google Generative AI and Open Food Facts API for real-time data, personalized eco-friendly recommendations, and user statistics. By tracking carbon savings and eco-friendly choices, CarbonPrint empowers users to make informed, sustainable decisions.</p>
+                    <h4>Skills Used</h4>
+                    <ul class="skills-list">
+                        <li>Machine Learning Algorithms</li>
+                        <li>React.js</li>
+                        <li>Google API</li>
+                        <li>Augmented Reality</li>
+                        <li>NLP</li>
+                    </ul>
+                    <div class="cert-buttons">
+                        <a href="https://carbon-print.vercel.app/" target="_blank" class="credential-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="js/main.js"></script>
 <script src="js/mousefollower.js"></script>
