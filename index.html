@@ -125,6 +125,18 @@
             <h2 class="section-title">Certifications</h2>
             <div class="content-grid">
 
+                <div class="content-card" onclick="openPopup('tryhackme-pen-popup')">
+                    <h3>TryHackMe Jr Penetration Tester</h3>
+                    <div class="card-info">
+                        <p class="card-primary">TryHackMe</p>
+                        <p class="card-secondary">Mar 2025</p>
+                        <p class="card-highlight">Age: 17</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>   
+
                 <div class="content-card" onclick="openPopup('ml-stanford-popup')">
                     <h3>Stanford Machine Learning Specialization</h3>
                     <div class="card-info">
@@ -362,6 +374,35 @@
 
     <!-- Popup Windows -->
     <div class="popup-overlay" id="popup-overlay" onclick="closePopup()"></div>
+
+
+    <!-- TryHackMe Pen test Popup -->
+    <div class="popup" id="tryhackme-pen-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>TryHackMe Jr Penetration Tester</h3>
+            <div class="popup-body">
+                <img src="img/pen.png" alt="TryHackMe Jr Penetration Tester" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Mar 2025</p>
+                    <p class="project-association">TryHackMe</p>
+                    <p class="age">Age: 17</p>
+                    <p class="credential-id">Credential ID: THM-PJACAS4TUR</p>
+                    <h4>About the Certification</h4>
+                    <p>This comprehensive learning path provides an in-depth exploration of penetration testing, covering essential topics such as pentesting methodologies and tactics, enumeration, exploitation, and reporting. It includes realistic hands-on hacking exercises, exposure to industry-standard security tools, and practical experience in Linux and red teaming, preparing learners for a career in cybersecurity.</p>                    
+                    <h4>Skills Acquired</h4>
+                    <ul class="skills-list">
+                        <li>Penetration Testing</li>
+                        <li>Web Hacking</li>
+                        <li>Linux</li>
+                        <li>Red Teaming</li>
+                        <li>Burp Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- ML Stanford Popup -->
     <div class="popup" id="ml-stanford-popup">
