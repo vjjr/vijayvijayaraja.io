@@ -17,9 +17,24 @@
     
     <!-- JavaScript -->
     <script src="js/main.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/animations.js" defer></script>
 </head>
 
 <body>
+    <div id="particles-js"></div>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-circle"></div>
+            <h2>Initializing...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-status">System Ready</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header id="header">
         <div class="header-content">
@@ -62,7 +77,7 @@
                 <img src="img/me.png" alt="Vijay Shrivarshan Vijayaraja" class="profile-image tilt-element">
                 <div class="profile-info">
                     <h1 class="profile-name">Vijay Shrivarshan Vijayaraja</h1>
-                    <p>I am Vijay Shrivarshan Vijayaraja, an 11th grader, currently enrolled at Laurel Heights Secondary School, driven by a profound passion for programming, Machine Learning/AI, and web development. In my relentless pursuit of knowledge and skill enhancement, I proudly hold distinctions as one of the youngest Salesforce Administrators and AI Associate certification holders. Moreover, I stand as the youngest individual to be certified in ISC2 certified in CyberSecurity and Google Cybersecurity certification. Beyond certifications, my enthusiasm extends to working on robotics projects, crafting circuit boards, and actively participating in hackathons. I am committed to broadening my expertise in technology and eagerly anticipate applying my skills to real-world projects and challenges.</p>
+                    <p id="bio-text"></p>
                 </div>
             </div>
         </section>
@@ -345,29 +360,57 @@
         <!-- Contact Section -->
         <section id="contact" class="section">
             <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-form">
-                <form id="emailForm" action="https://formspree.io/f/xeoqbjaw" method="POST">
-                    <input type="hidden" name="_subject" value="New Contact Form Submission">
-                    <input type="hidden" name="_next" value="https://tnvjjr.github.io/#contact">
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Feel free to reach out anytime</p>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Enter email subject">
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Let's connect professionally</p>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Check out my projects</p>
                     </div>
-                    <button type="submit" class="submit-btn" id="submitButton">
-                        <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
-                        <span class="btn-loading" style="display: none;">
-                            <i class="fas fa-spinner fa-spin"></i> Sending...
-                        </span>
-                    </button>
-                </form>
+                </div>
+                <div class="contact-form">
+                    <form id="emailForm" action="https://formspree.io/f/xeoqbjaw" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <input type="hidden" name="_next" value="https://tnvjjr.github.io/#contact">
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-container">
+                                <i class="fas fa-heading"></i>
+                                <input type="text" id="subject" name="subject" required placeholder="Enter email subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-container">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitButton">
+                            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -398,6 +441,9 @@
                         <li>Red Teaming</li>
                         <li>Burp Suite</li>
                     </ul>
+                    <div class="cert-buttons">
+                        <a href="https://tryhackme.com/certificate/THM-PJACAS4TUR" target="_blank" class="credential-link">View Credential</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -491,6 +537,9 @@
                         <li>Defensive Security Strategies</li>
                         <li>Security Tools & Implementation</li>
                     </ul>
+                    <div class="cert-buttons">
+                        <a href="https://tryhackme.com/certificate/THM-ZO8XCAAGJG" target="_blank" class="credential-link">View Credential</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -532,7 +581,7 @@
     <div class="popup" id="google-cyber">
         <div class="popup-content">
             <button class="close-popup" onclick="closePopup()">&times;</button>
-            <h3>Google Cybersecurity Certification</h3>
+            <h3>Google Cybersecurity Professional Certificate</h3>
             <div class="popup-body">
                 <img src="img/Google Cybersecurity.png" alt="Google Cybersecurity Certification" class="cert-logo">
                 <div class="cert-details">
@@ -725,7 +774,7 @@
                 <div class="cert-details">
                     <p class="project-duration">Jan 2025 - Present </p>
                     <p class="project-association">building-U · Internship</p>
-                    <p class="location">St John’s, Newfoundland and Labrador, Canada · Remote</p>
+                    <p class="location">St John's, Newfoundland and Labrador, Canada · Remote</p>
                     <h4>About the Role</h4>
                     <p>As a Software Engineer Intern for the Coding Team, I gained hands-on experience in web and database development, working with PHP, React, HTML, CSS, Bootstrap, WordPress, and SASS. By contributing to the migration of the building-U website, I enhanced my front-end and back-end development skills. Collaborating with peers and leveraging modern tools, I prioritized functionality, responsiveness, and user experience while delivering polished, impactful projects</p>
                 </div>
@@ -920,7 +969,7 @@
                     <p class="project-duration">Jan 2025</p>
                     <p class="project-association">Neural Network</p>
                     <h4>About the Project</h4>
-                    <p>The Lunar Lander DQN Model trains an AI agent to master OpenAI Gym’s Lunar Lander using Deep Q-Networks. It features real-time Pygame visualizations, dynamic training plots, and customizable PyTorch-based learning, achieving stable performance through advanced reinforcement techniques.</p>
+                    <p>The Lunar Lander DQN Model trains an AI agent to master OpenAI Gym's Lunar Lander using Deep Q-Networks. It features real-time Pygame visualizations, dynamic training plots, and customizable PyTorch-based learning, achieving stable performance through advanced reinforcement techniques.</p>
                     <h4>Skills Used</h4>
                     <ul class="skills-list">
                         <li>Neural Network Design</li>
@@ -994,8 +1043,9 @@
 
 </body>
 <script src="js/main.js"></script>
-<script src="js/mousefollower.js"></script>
 <script src="js/cat.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/particles.js"></script>
 <script>
   function toggleMenu() {
     const menuButton = document.querySelector('.mobile-menu');

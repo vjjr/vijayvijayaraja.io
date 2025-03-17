@@ -1,41 +1,30 @@
 // Popup functionality
 function openPopup(popupId) {
-    const overlay = document.getElementById('popup-overlay');
     const popup = document.getElementById(popupId);
+    const overlay = document.getElementById('popup-overlay');
     
-    // First display the elements
-    overlay.style.display = 'block';
-    popup.style.display = 'block';
-    
-    // Force a reflow to enable the transition
-    void overlay.offsetWidth;
-    void popup.offsetWidth;
-    
-    // Add active class to trigger animations
-    overlay.classList.add('active');
-    popup.classList.add('active');
-    
-    document.body.style.overflow = 'hidden';
+    if (popup && overlay) {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+        setTimeout(() => {
+            popup.classList.add('active');
+            overlay.classList.add('active');
+        }, 10);
+    }
 }
 
 function closePopup() {
+    const activePopup = document.querySelector('.popup.active');
     const overlay = document.getElementById('popup-overlay');
-    const popups = document.querySelectorAll('.popup');
     
-    // Remove active class to trigger closing animations
-    overlay.classList.remove('active');
-    popups.forEach(popup => {
-        popup.classList.remove('active');
-    });
-    
-    // Wait for animations to complete before hiding elements
-    setTimeout(() => {
-        overlay.style.display = 'none';
-        popups.forEach(popup => {
-            popup.style.display = 'none';
-        });
-        document.body.style.overflow = '';
-    }, 300); // Match this with the CSS transition duration
+    if (activePopup && overlay) {
+        activePopup.classList.remove('active');
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            activePopup.style.display = 'none';
+            overlay.style.display = 'none';
+        }, 300);
+    }
 }
 
 // Add smooth scrolling to all links
@@ -121,4 +110,51 @@ form.addEventListener('submit', async function(event) {
     btnText.style.display = 'inline-block';
     btnLoading.style.display = 'none';
     submitButton.disabled = false;
+});
+
+// Mobile menu functionality
+function toggleMenu() {
+    const menuButton = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.classList.toggle('active');
+    navLinks.classList.toggle('active');
+}
+
+// Form submission handling
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('emailForm');
+    const submitButton = document.getElementById('submitButton');
+    
+    if (form && submitButton) {
+        form.addEventListener('submit', (e) => {
+            const btnText = submitButton.querySelector('.btn-text');
+            const btnLoading = submitButton.querySelector('.btn-loading');
+            
+            if (btnText && btnLoading) {
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline-block';
+                submitButton.disabled = true;
+            }
+        });
+    }
+});
+
+// Add scroll event listener for navbar
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+    } else {
+        header.classList.remove('header-scrolled');
+    }
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const menuButton = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuButton.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
 });

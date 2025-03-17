@@ -1,9 +1,26 @@
-class Neko {
+// Cat animation code
+class NekoAnimation {
     constructor() {
-        this.element = document.createElement('div');
-        this.element.id = 'neko';
-        document.body.appendChild(this.element);
-        
+        this.neko = document.getElementById('neko');
+        if (!this.neko) {
+            this.neko = document.createElement('div');
+            this.neko.id = 'neko';
+            document.body.appendChild(this.neko);
+        }
+        // Initially hide the cat
+        this.neko.style.display = 'none';
+        this.init();
+    }
+
+    init() {
+        // Wait for loading to complete before showing cat
+        document.addEventListener('loadingComplete', () => {
+            this.neko.style.display = 'block';
+            this.startAnimation();
+        });
+    }
+
+    startAnimation() {
         this.x = window.innerWidth / 2;
         this.y = window.innerHeight / 2;
         this.targetX = this.x;
@@ -127,15 +144,15 @@ class Neko {
         }
         
         // Update element
-        this.element.style.left = `${this.x - 32}px`;
-        this.element.style.top = `${this.y - 32}px`;
-        this.element.style.backgroundImage = `url('assets/cat/${sprite}')`;
+        this.neko.style.left = `${this.x - 32}px`;
+        this.neko.style.top = `${this.y - 32}px`;
+        this.neko.style.backgroundImage = `url('assets/cat/${sprite}')`;
         
         requestAnimationFrame(() => this.update());
     }
 }
 
-// Initialize Neko when the page loads
+// Initialize cat only after DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new Neko();
+    new NekoAnimation();
 });
