@@ -66,8 +66,6 @@ class LoadingScreen {
             setTimeout(() => {
                 this.loadingScreen.style.display = 'none';
                 initScrollAnimations();
-                // Dispatch event to show cat
-                document.dispatchEvent(new Event('loadingComplete'));
             }, 500);
         }, 1000);
     }
@@ -108,4 +106,4 @@ function initScrollAnimations() {
     titles.forEach(title => {
         observer.observe(title);
     });
-} 
+}

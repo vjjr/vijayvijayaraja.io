@@ -960,33 +960,7 @@ nav {
   }
 }
 
-/* Contact Section */
-#contact {
-  background: var(--background-secondary);
-  padding: 6rem 2rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  position: relative;
-  z-index: 1;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-card {
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
+/* Contact Section has been removed */
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
   border-radius: 1rem;
@@ -1518,21 +1492,7 @@ nav {
   color: white !important;
 }
 
-#neko {
-  position: fixed;
-  width: 64px;
-  height: 64px;
-  pointer-events: none;
-  z-index: 9999;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: transform 0.1s ease-out;
-  display: none; /* Initially hidden */
-}
 
-body.loading #neko {
-  display: none !important;
-}
 
 @media screen and (max-width: 768px) {
   .header-content {

@@ -68,49 +68,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Email form handling
-const form = document.getElementById('emailForm');
-const submitButton = document.getElementById('submitButton');
-const btnText = submitButton.querySelector('.btn-text');
-const btnLoading = submitButton.querySelector('.btn-loading');
-
-form.addEventListener('submit', async function(event) {
-    event.preventDefault();
-    
-    // Show loading state
-    btnText.style.display = 'none';
-    btnLoading.style.display = 'inline-block';
-    submitButton.disabled = true;
-
-    try {
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-        
-        const data = await response.json();
-        
-        if (response.ok) {
-            // Show success message
-            alert('Message sent successfully!');
-            form.reset();
-        } else {
-            throw new Error(data.error || 'Form submission failed');
-        }
-    } catch (error) {
-        // Show error message
-        alert('Failed to send message. Please try again.');
-        console.error('Form error:', error);
-    }
-
-    // Reset button state
-    btnText.style.display = 'inline-block';
-    btnLoading.style.display = 'none';
-    submitButton.disabled = false;
-});
+// Email form handling has been removed
 
 // Mobile menu functionality
 function toggleMenu() {
@@ -120,24 +78,8 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
-// Form submission handling
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('emailForm');
-    const submitButton = document.getElementById('submitButton');
-    
-    if (form && submitButton) {
-        form.addEventListener('submit', (e) => {
-            const btnText = submitButton.querySelector('.btn-text');
-            const btnLoading = submitButton.querySelector('.btn-loading');
-            
-            if (btnText && btnLoading) {
-                btnText.style.display = 'none';
-                btnLoading.style.display = 'inline-block';
-                submitButton.disabled = true;
-            }
-        });
-    }
-});
+// Form submission is handled by the main email form handler above
+// No need for a duplicate event listener here
 
 // Add scroll event listener for navbar
 window.addEventListener('scroll', () => {
