@@ -45,13 +45,14 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <!-- Contact link removed -->
                 </ul>
                 <div class="social-links">
-                    <a href="https://github.com/tnvjjr" target="_blank" class="social-link">
+                    <a href="https://github.com/vjjr" target="_blank" class="social-link">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/vijay-shrivarshan-vijayaraja-82a528212/" target="_blank" class="social-link">
@@ -83,10 +84,58 @@
             </div>
         </section>
 
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="content-grid">
+                <div class="content-card" onclick="openPopup('laurel-heights-popup')">
+                    <h3>Laurel Heights Secondary School</h3>
+                    <div class="card-info">
+                        <p class="card-primary">High School</p>
+                        <p class="card-secondary">Sept 2022 - Jul 2026</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openPopup('sans-institute-popup')">
+                    <h3>SANS Institute</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Cybersecurity Training</p>
+                        <p class="card-secondary">Jun 2025 - Dec 2025</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openPopup('quantum-popup')">
+                    <h3>Quantum School for Young Students</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Enrichment Program</p>
+                        <p class="card-secondary">Aug 2025</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Section -->
         <section id="experience" class="section">
             <h2 class="section-title">Experience</h2>
             <div class="content-grid">
+
+                <div class="content-card" onclick="openPopup('uwaterloo-research-popup')">
+                    <h3>Student Researcher</h3>
+                    <div class="card-info">
+                        <p class="card-primary">University of Waterloo · Research</p>
+                        <p class="card-secondary">July 2025 - Aug 2025</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
 
                 <div class="content-card" onclick="openPopup('building-U-popup')">
                     <h3>Software Engineer Intern</h3>
@@ -121,7 +170,6 @@
                     </div>
                 </div>
 
-
                 <div class="content-card" onclick="openPopup('cadet-popup')">
                     <h3>Flight Corporal</h3>
                     <div class="card-info">
@@ -138,9 +186,31 @@
 
         <!-- Certifications Section -->
         <section id="certifications" class="section">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Achievements & Certifications</h2>
             <div class="content-grid">
 
+                <div class="content-card" onclick="openPopup('gfact-popup')">
+                    <h3>GIAC Foundational Cybersecurity Technologies (GFACT)</h3>
+                    <div class="card-info">
+                        <p class="card-primary">SANS Institute</p>
+                        <p class="card-secondary">Sept 2025</p>
+                        <p class="card-highlight">Age: 17</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openPopup('sans-scholarship-popup')">
+                    <h3>SANS Institute Scholarship Recipient</h3>
+                    <div class="card-info">
+                        <p class="card-primary">SANS Institute</p>
+                        <p class="card-secondary">Jun 2025</p>
+                        <p class="card-highlight">Age: 17</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
                 <div class="content-card" onclick="openPopup('tryhackme-pen-popup')">
                     <h3>TryHackMe Jr Penetration Tester</h3>
                     <div class="card-info">
@@ -151,21 +221,17 @@
                     <div class="card-overlay">
                         <span>View More</span>
                     </div>
-                </div>   
-
-                <div class="content-card" onclick="openPopup('ml-stanford-popup')">
-                    <h3>Stanford Machine Learning Specialization</h3>
+                </div>
+                <div class="content-card" onclick="openPopup('eureka-hacks-popup')">
+                    <h3>3rd Place Overall @ Eureka Hacks</h3>
                     <div class="card-info">
-                        <p class="card-primary">Stanford</p>
-                        <p class="card-secondary">Dec 2024</p>
-                        <p class="card-highlight">Age: 16</p>
+                        <p class="card-primary">Eureka Hacks</p>
+                        <p class="card-secondary">Apr 2025</p>
                     </div>
                     <div class="card-overlay">
                         <span>View More</span>
                     </div>
-                </div>            
-
-
+                </div>
                 <div class="content-card" onclick="openPopup('ibm-ai-popup')">
                     <h3>IBM Artificial Intelligence Fundamentals</h3>
                     <div class="card-info">
@@ -177,7 +243,17 @@
                         <span>View More</span>
                     </div>
                 </div>
-
+                <div class="content-card" onclick="openPopup('ml-stanford-popup')">
+                    <h3>Stanford Machine Learning Specialization</h3>
+                    <div class="card-info">
+                        <p class="card-primary">Stanford</p>
+                        <p class="card-secondary">Dec 2024</p>
+                        <p class="card-highlight">Age: 16</p>
+                    </div>
+                    <div class="card-overlay">
+                        <span>View More</span>
+                    </div>
+                </div>
                 <div class="content-card" onclick="openPopup('tryhackme-popup')">
                     <h3>TryHackMe Cyber Security 101</h3>
                     <div class="card-info">
@@ -189,7 +265,6 @@
                         <span>View More</span>
                     </div>
                 </div>
-
                 <div class="content-card" onclick="openPopup('isc2-popup')">
                     <h3>ISC2 Certified in CyberSecurity</h3>
                     <div class="card-info">
@@ -201,7 +276,6 @@
                         <span>View More</span>
                     </div>
                 </div>
-
                 <div class="content-card" onclick="openPopup('google-cyber')">
                     <h3>Google Cybersecurity Professional Certificate</h3>
                     <div class="card-info">
@@ -213,7 +287,6 @@
                         <span>View More</span>
                     </div>
                 </div>
-
                 <div class="content-card" onclick="openPopup('python-popup')">
                     <h3>Python Essentials</h3>
                     <div class="card-info">
@@ -225,7 +298,6 @@
                         <span>View More</span>
                     </div>
                 </div>
-
                 <div class="content-card" onclick="openPopup('salesforce-ai-popup')">
                     <h3>Salesforce Certified AI Associate</h3>
                     <div class="card-info">
@@ -237,7 +309,6 @@
                         <span>View More</span>
                     </div>
                 </div>
-
                 <div class="content-card" onclick="openPopup('salesforce-admin-popup')">
                     <h3>Salesforce Certified Administrator</h3>
                     <div class="card-info">
@@ -998,6 +1069,72 @@
         </div>
     </div>
 
+    <div class="popup" id="uwaterloo-research-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Student Researcher</h3>
+            <div class="popup-body">
+                <img src="img/uw.jpg" alt="University of Waterloo" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">July 2025 - Aug 2025</p>
+                    <p class="project-association">University of Waterloo · Research</p>
+                    <p class="location">Waterloo, Ontario, Canada · On-site</p>
+                    <h4>About the Role</h4>
+                    <p>As a student researcher at the University of Waterloo, under the guidance of Professor Raouf Boutaba, Director of the Cheriton School of Computer Science, I investigated the architectural extension of WebRTC to enable multipath-aware, adaptive real-time media transport across heterogeneous wireless networks. My research focused on enabling seamless handover and concurrent streaming by integrating dynamic path management and quality-based selection, optimizing live video delivery from a Jetson Racer autonomous robot car to a remote controller in volatile wireless environments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laurel Heights Secondary School Popup -->
+    <div class="popup" id="laurel-heights-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Laurel Heights Secondary School</h3>
+            <div class="popup-body">
+                <img src="img/lhss.jpg" alt="Laurel Heights Secondary School" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Sept 2022 - Jul 2026</p>
+                    <p class="project-association">High School</p>
+                    <h4>About</h4>
+                    <p>As a student at Laurel Heights, I serve as Vice President and Co-founder of the STEM Club and the Entrepreneurship Club, creating opportunities for innovation, leadership, and collaboration among my peers. I am also Vice President of the Debate Club, strengthening my public speaking and critical thinking skills. Beyond academics, I stay active through track and field and football, balancing leadership, teamwork, and personal growth across multiple areas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quantum School for Young Students Popup -->
+    <div class="popup" id="quantum-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>Quantum School for Young Students</h3>
+            <div class="popup-body">
+                <img src="img/qsys.avif" alt="Quantum School for Young Students" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Aug 2025</p>
+                    <p class="project-association">Enrichment Program</p>
+                    <h4>About</h4>
+                    <p>Participant in the Quantum School for Young Students (QSYS) at the University of Waterloo, where I explored quantum information science and its applications in mathematics, physics, and computer science. The program strengthened my critical thinking and problem-solving abilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SANS Institute Popup -->
+    <div class="popup" id="sans-institute-popup">
+        <div class="popup-content">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <h3>SANS Institute</h3>
+            <div class="popup-body">
+                <img src="img/sans.avif" alt="SANS Institute" class="cert-logo">
+                <div class="cert-details">
+                    <p class="project-duration">Jun 2025 - Dec 2025</p>
+                    <p class="project-association">Cybersecurity Training</p>
+                    <h4>About</h4>
+                    <p>I learned essential foundational skills in computers, networking, operating systems, programming, and cybersecurity concepts. The course provided hands-on experience with practical tools and techniques, including encryption, virtualization, and ethical hacking basics, preparing me to confidently engage in cybersecurity roles. I successfully completed the following course: <strong>SEC275: Foundations: Computers, Technology, & Security</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -1035,6 +1172,68 @@
                 <div class="cert-buttons">
                     <a href="https://local-link-fxnd.vercel.app/" target="_blank" class="credential-link">View Project</a>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GFACT Popup -->
+<div class="popup" id="gfact-popup">
+    <div class="popup-content">
+        <button class="close-popup" onclick="closePopup()">&times;</button>
+        <h3>GIAC Foundational Cybersecurity Technologies (GFACT)</h3>
+        <div class="popup-body">
+            <img src="img/giac.png" alt="GFACT" class="cert-logo">
+            <div class="cert-details">
+                <p class="project-duration">Sept 2025</p>
+                <p class="project-association">SANS Institute</p>
+                <h4>About the Certification</h4>
+                <p>The GIAC Foundational Cybersecurity Technologies (GFACT) certification validates a practitioner's knowledge of essential foundational cybersecurity concepts. GFACT-certified professionals are familiar with practical skills in computers, technology, and security fundamentals that are needed to kickstart a career in cybersecurity.</p>
+                <h4>Skills Acquired</h4>
+                <ul class="skills-list">
+                    <li>Computer Networking</li>
+                    <li>Cyber Security Concepts</li>
+                    <li>Exploitation Fundamentals</li>
+                    <li>Forensics Fundamentals</li>
+                    <li>Information Security</li>
+                    <li>Operating System Fundamentals</li>
+                    <li>Programming Fundamentals</li>
+                </ul>
+                <div class="cert-buttons">
+                    <a href="https://www.credly.com/badges/062feac6-b40f-4272-8a78-395e6df21e6e" target="_blank" class="credential-link">View Credential</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SANS Scholarship Popup -->
+<div class="popup" id="sans-scholarship-popup">
+    <div class="popup-content">
+        <button class="close-popup" onclick="closePopup()">&times;</button>
+        <h3>SANS Institute Scholarship Recipient</h3>
+        <div class="popup-body">
+            <img src="img/cyberstart.png" alt="SANS Scholarship" class="cert-logo">
+            <div class="cert-details">
+                <p class="project-duration">Jun 2025</p>
+                <p class="project-association">SANS Institute</p>
+                <h4>About the Achievement</h4>
+                <p>Selected for the SANS Institute Scholarship worth ~$7k CAD through CyberStart Canada at 17 years old; recognized as one of the top recipients from a pool of 700 students nationwide for outstanding performance in hands-on cybersecurity challenges and technical assessments, including the opportunity to write the GFACT certification exam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Eureka Hacks Popup -->
+<div class="popup" id="eureka-hacks-popup">
+    <div class="popup-content">
+        <button class="close-popup" onclick="closePopup()">&times;</button>
+        <h3>3rd Place Overall @ Eureka Hacks</h3>
+        <div class="popup-body">
+            <img src="img/me.jpeg" alt="Eureka Hacks" class="cert-logo">
+            <div class="cert-details">
+                <p class="project-duration">Apr 2025</p>
+                <p class="project-association">Eureka Hacks</p>
+                <h4>About the Achievement</h4>
+                <p>Secured 3rd Place Overall at Eureka Hacks (largest high school hackathon in Canada) for building LocalLink, a social platform that connects outdoor enthusiasts through real-time chat, geolocation, and shared activity planning to foster local community engagement.</p>
             </div>
         </div>
     </div>
